@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/myImage"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/linear_layout_background"
+    android:elevation="4dp"
+    android:layout_margin="15sp"
+    android:orientation="horizontal"
+    app:layout_constraintCircleRadius="10dp">
+
+
+    <ImageView
+        android:id="@+id/tImage"
+        android:layout_width="130dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_height="130dp"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="1dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="10sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="bchzbv"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tVendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+
+                android:text="sacczxc"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendor"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".0"
+            android:padding="10sp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+        <TextView
+            android:id="@+id/tCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="bchzbv"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+        <TextView
+            android:id="@+id/tAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+
+            android:text="sacczxc"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availability"/>
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
