@@ -2,6 +2,8 @@ package com.intellinettechnologies.evrybocom;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,6 +17,7 @@ import java.util.ArrayList;
 public class DetailActivity extends AppCompatActivity {
  TextView mType;
  ImageView mImageView;
+ Toolbar toolbar;
  String id;
  int myI;
 
@@ -22,6 +25,13 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         Bundle extras = getIntent().getExtras();
         if(extras!=null) {
@@ -61,17 +71,15 @@ public class DetailActivity extends AppCompatActivity {
         mType = findViewById(R.id.dDate);
         mType.setText(data.get(myI).getDate());
 
-        RequestOptions options = new RequestOptions();
-        options.centerCrop();
+
 
         mImageView = findViewById(R.id.detailImage);
 
         Glide.with(getApplicationContext())
                 .load(myapplication.getMyImages().get(myI))
-                .apply(options)
+
                 .into(mImageView);
 
-//        mImageView.setImageDrawable(myapplication.getMyImages().get(myI));
 
 
 

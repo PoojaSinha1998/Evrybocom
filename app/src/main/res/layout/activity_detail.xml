@@ -15,6 +15,7 @@
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="Fabric's Detail"
+        app:navigationIcon="?attr/homeAsUpIndicator"
         app:titleTextColor="@color/colorBlack" />
 <LinearLayout
     android:layout_width="match_parent"
